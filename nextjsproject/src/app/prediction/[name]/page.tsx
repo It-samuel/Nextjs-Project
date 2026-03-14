@@ -17,6 +17,8 @@ interface Params {
   params: { name: string };
 }
 
+console.log("Prediction component rendered");
+
 async function Prediction({ params }: Params) {
   const ageData = getPredictedAge(params.name);
   const genderData = getPredictedGender(params.name);
